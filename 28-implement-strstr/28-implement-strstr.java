@@ -7,7 +7,7 @@ class Solution {
     int p = 0;
     int t = 0;
     int h = 1;
-    int d = 5;
+    int d = 1;
         int q = 2147483647;
         
         if(m>n) return -1;
