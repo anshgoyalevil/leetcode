@@ -5,7 +5,7 @@ class Solution {
             return 1;
         }
         
-        double a = myPow(x, n/2);
+        double a = my(x, n/2);
         double b = a*a;
         
         if(n%2==1){
