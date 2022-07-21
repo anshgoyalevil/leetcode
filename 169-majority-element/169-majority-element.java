@@ -1,23 +1,26 @@
 class Solution {
     public int majorityElement(int[] nums) {
         
-        HashMap<Integer, Integer> hm = new HashMap<>();
+        long candidate = 10000000000l;
+        
+        int votes = 0;
         
         for(int i = 0; i<nums.length; i++){
             
-            hm.put(nums[i], hm.getOrDefault(nums[i], 0)+1);
-            
-        }
-        
-        for(Map.Entry<Integer, Integer> entry: hm.entrySet()){
-            
-            if(entry.getValue() >= (nums.length+1)/2){
-                return entry.getKey();
+            if(votes == 0){
+                candidate = nums[i];
+                votes = 1;
+            }
+            else if(candidate != nums[i]){
+                votes--;
+            }
+            else{
+                votes++;
             }
             
         }
         
-        return -1;
+        return (int)candidate;
         
     }
 }
