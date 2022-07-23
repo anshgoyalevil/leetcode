@@ -13,17 +13,15 @@ class Solution {
         
         ListNode prev = null;
         
-        ListNode curr = head;
-        
-        while(curr != null){
+        while(head != null){
             
-            ListNode next = curr.next;
+            ListNode next = head.next;
             
-            curr.next = prev;
+            head.next = prev;
             
-            prev = curr;
+            prev = head;
             
-            curr = next;
+            head = next;
             
         }
         
