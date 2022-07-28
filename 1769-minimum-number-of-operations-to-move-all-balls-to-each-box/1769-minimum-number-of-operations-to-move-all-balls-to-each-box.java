@@ -21,8 +21,6 @@ class Solution {
                 ans[i] = Math.abs(sum - i*total) + Math.abs(sumBack - i*back);
                 sumBack+=i;
                 sum-=i;
-                System.out.println(sum + " " + sumBack);
-                System.out.println(i + " " + total + " " + back);
                 total--;
                 back++;
             }
