@@ -19,11 +19,12 @@ class Solution {
     
     public void s(TreeNode root, int low, int high){
         if(root!=null){
-            s(root.left, low, high);
-            s(root.right, low, high);
             if(root.val <= high && root.val>=low){
                 sum+=root.val;
             }
+            s(root.left, low, high);
+            s(root.right, low, high);
+            
         }
     }
     
