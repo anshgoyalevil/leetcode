@@ -2,10 +2,6 @@ class Solution {
     
     boolean ans = false;
     
-    public boolean t(){
-        return true;
-    }
-    
     public void f(char[][] board, String psf, int n, int m, int [][] vis, String word, int ind){
         
         if(n<0 || m<0 || n>=board.length || m>=board[0].length || vis[n][m] == -1 || ind>=word.length()){
@@ -16,7 +12,7 @@ class Solution {
         }
         if((psf+board[n][m]).equals(word)){
             ans = true;
-            t();
+            exist(board, word);
             return;
         }
         
@@ -30,6 +26,10 @@ class Solution {
     }
     
     public boolean exist(char[][] board, String word) {
+        
+        if(ans){
+            return true;
+        }
         
         int [][] vis = new int [board.length][board[0].length];
         
