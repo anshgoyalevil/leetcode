@@ -28,8 +28,8 @@ class Solution {
             }
             
             if(r == hm.size() && r == org.size()){
-                System.out.println(r+ " "+hm.size() + " " + org.size());
-                System.out.println(hm + " " + org);
+                //System.out.println(r+ " "+hm.size() + " " + org.size());
+               //System.out.println(hm + " " + org);
                 return true;
             }
             else{
