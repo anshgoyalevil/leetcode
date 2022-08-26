@@ -29,7 +29,7 @@ class Solution {
             
             rem = (a1 + a2 + rem) / 2;
             
-            System.out.println(ans);
+            //System.out.println(ans);
 
             r1--;
             r2--;
