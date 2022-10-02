@@ -16,9 +16,9 @@ class Solution {
         for (int i : ans) {
             if (
                 i != 0 || st.length() != 0
-            ) st.append(i); //avoid leading zeros
+            ) st.append(i);
         }
-        if (st.length() == 0) return "0"; // product 0
+        if (st.length() == 0) return "0";
         return st.toString();
     }
 }
