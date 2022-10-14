@@ -16,7 +16,7 @@ class Solution {
                 gf++;
             }
             else{
-                System.out.println(ps + " " + pg + " " + sf + " " + gf);
+                //System.out.println(ps + " " + pg + " " + sf + " " + gf);
                 ans++;
                 ps = sf;
                 pg = gf;
