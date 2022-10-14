@@ -5,16 +5,16 @@ class Solution {
             c[i] = c[i] - r[i];
         }
         
-        int ans = 0;
+        r[r.length-1] = 0;
         
         Arrays.sort(c);
         
         for(int i = 0; i<c.length; i++){
             if(c[i]<=a){
-                ans++;
+                r[r.length-1]++;
                 a-=c[i];
             }
         }
-        return ans;
+        return r[r.length-1];
     }
 }
