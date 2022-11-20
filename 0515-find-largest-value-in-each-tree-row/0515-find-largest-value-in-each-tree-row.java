@@ -43,7 +43,7 @@ class Solution {
             kd(root, i);
             ans.add(mx);
         }
-        System.out.println(h);
+        //System.out.println(h);
         return ans;
     }
 }
